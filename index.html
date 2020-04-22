@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Instagram Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f727e4e69.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="phone-app-demo">
+          <div class="phone-image" id="phone-image"></div>
+        </div>
+        <div class="form-data">
+          <form action="">
+            <div class="logo">
+              <img src="images/instagram.png" alt="">
+            </div>
+            <input type="text" placeholder="Phone number, username, or email">
+            <input type="text" placeholder="Password">
+            <button class="form-btn" type="submit">Log in</button>
+            <span class="has-separator">Or</span>
+            <a class="facebook-login" href="#">
+              <i class="fab fa-facebook">Log in with Facebook</i>
+            </a>
+            <a href="#" class="password-reset">Forgot password</a>
+          </form>
+          <div class="sign-up">
+            Don't have an account? <a href="#">Sign up</a>
+          </div>
+          <div class="get-the-app">
+            <span>Get the app.</span>
+            <div class="badges">
+              <img src="images/appstore.png" alt="">
+              <img src="images/googleplay.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">HELP</a></li>
+              <li><a href="#">PRESS</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">JOBS</a></li>
+              <li><a href="#">PRIVACY</a></li>
+              <li><a href="#">TERMS</a></li>
+              <li><a href="#">LOCATIONS</a></li>
+              <li><a href="#">TOP ACCOUNTS</a></li>
+              <li><a href="#">HASHTAGS</a></li>
+              <li><a href="#">LANGUAGE</a></li>
+            </ul>
+          </nav>
+          <div class="copyright-notice">
+            &copy; 2020 INSTAGRAM FROM FACEBOOK
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var arr= ["images/image1.jpg","images/image2.jpg","images/image3.jpg","images/image4.jpg"];
+    var i = 0;
+    function doIt() {
+      var test = setInterval(()=>{
+        i++;
+        document.getElementById("phone-image").style.backgroundImage = `url(${arr[i]})`;
+        if(i == 3 )
+          i= -1;
+      },3000);
+    }
+    doIt()
+  </script>
+</html>
